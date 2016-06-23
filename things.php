@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
   <title>Things</title>
 </head>
   <body>

@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
   <title>About</title>
-  <link rel="stylesheet" type="text/css" href="assets/stylesheets/mystyle.css">
 </head>
   <body>
     <h1>About me</h1>
