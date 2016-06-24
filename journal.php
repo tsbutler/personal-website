@@ -6,10 +6,12 @@
     <title>Journal</title>
   </head>
   <body>
-    <div class="container">
-      <div class="nav">
-        <?php include 'assets/phpincludes/navigation.php';?>
-      </div>
+    <div class="flex-container">
+      <nav>
+        <div class="nav-wrapper">
+          <?php include 'assets/phpincludes/navigation.php';?>
+        </div>
+      </nav>
       <div class="main">    
         <h1>Journal Entries</h1>
           <h2>Tuesday June 21, 2016</h2>

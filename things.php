@@ -6,10 +6,12 @@
     <title>Things</title>
   </head>
   <body>
-    <div class="container">
-      <div class="nav">
-        <?php include 'assets/phpincludes/navigation.php';?>
-      </div>
+    <div class="flex-container">
+      <nav>
+        <div class="nav-wrapper">
+          <?php include 'assets/phpincludes/navigation.php';?>
+        </div>
+      </nav>
       <div class="main">
         <h1>Welcome</h1>
           <h2>What this is...</h2>
