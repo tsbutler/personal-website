@@ -6,17 +6,25 @@
   <title>Home</title>
 </head>
   <body>
-    <div class="flex-container">
+    <header></header>
+    <div id='main'>
       <nav>
-        <div class="nav-wrapper">
-          <?php include 'assets/phpincludes/navigation.php';?>
-        </div>
+        <?php include 'assets/phpincludes/navigation.php';?>
       </nav>
-      <div class="main">
+      <article>
         <h1>Welcome</h1>
           <h2>What this is...</h2>
             <p>This is a website built as both a sandbox and showcase for my burgeoning skills as a web developer.  Please, feel free to look around, ask questions, and provide feedback.</p>
-      </div>
-    </div>    
+      </article>
+      <aside></aside>
+    </div>
+    <footer></footer>
   </body>
 </html>
+    
+    
+      
+      
+      
+    
+    
