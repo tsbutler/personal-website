@@ -9,7 +9,9 @@
     <header></header>
     <div id='main'>
       <nav>
+        <div class="nav-bar">
         <?php include 'assets/phpincludes/navigation.php';?>
+        <div>
       </nav>
       <article>
         <h1>Welcome</h1>
