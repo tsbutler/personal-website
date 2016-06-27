@@ -6,7 +6,7 @@
     <title>Things</title>
   </head>
   <body>
-    <header></header>
+    <header><?php echo $thisPage ?></header>
       <div id='main'>
         <nav>
           <div class="nav-bar">
