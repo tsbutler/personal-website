@@ -27,13 +27,21 @@ a:link {
 }
 
 a > img {
+  margin-top: 20px;
   width:64px;
   height:64px;
   border:0;
+  -webkit-transition: margin 0.3s ease;
+  -moz-transition: margin 0.3s ease;
+  -o-transition: margin 0.3s ease;
 }
 
 a > img:hover {
-  
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-transition: margin 0.3s ease;
+  -moz-transition: margin 0.3s ease;
+  -o-transition: margin 0.3s ease;
 }
 #main {
   min-height: 800px;
