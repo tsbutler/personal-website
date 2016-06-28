@@ -1,6 +1,5 @@
 body {
   font-family: serif;
-  font: 20px;
   background: white;
 }
 
@@ -27,6 +26,15 @@ a:link {
   text-decoration:none;
 }
 
+a > img {
+  width:64px;
+  height:64px;
+  border:0;
+}
+
+a > img:hover {
+  
+}
 #main {
   min-height: 800px;
   margin: 0px;

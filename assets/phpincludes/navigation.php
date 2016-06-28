@@ -10,7 +10,7 @@ $profiles = array("twitter" => "https://twitter.com/ThinkingBinary", "linkedin" 
   
   <?php foreach($profiles as $key => $val) { ?>
     <a href="<?php echo $val; ?>">
-      <img src="assets/images/<?php echo $key; ?>.png" alt="<?php echo $key; ?>" style= "width:64px;height:64px;border:0;">
+      <img src="assets/images/<?php echo $key; ?>.png" alt="<?php echo $key; ?>">
     </a>
   <?php } ?>
 
