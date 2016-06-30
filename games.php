@@ -1,6 +1,5 @@
 <?php 
 $thisPage="Games"; 
-session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -9,18 +8,6 @@ session_start();
     <title>Games</title>
   </head>
   <body>
-
-    <?php
-      if ($_GET["game"] === ""){
-        // NGIP = "No Games In Progress"
-        $_SESSION = "NGIP"; ?>
-        <p><?php echo $_SESSION; ?></p>
-    <?php } 
-      elseif ($_GET["weapon"] == "rock" || "paper" || "scissors"){
-        $_SESSION = $_GET["weapon"]; ?>
-        <p><?php echo $_SESSION; ?></p>
-    <?php } ?>
-
     <header><?php echo $thisPage ?></header>
       <div id='main'>
         <nav>
