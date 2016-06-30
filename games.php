@@ -1,11 +1,26 @@
-<?php $thisPage="Games"; ?>
+<?php 
+$thisPage="Games"; 
+session_start();
+?>
 <!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
-    <title>Things</title>
+    <title>Games</title>
   </head>
   <body>
+
+    <?php
+      if ($_GET["game"] === ""){
+        // NGIP = "No Games In Progress"
+        $_SESSION = "NGIP"; ?>
+        <p><?php echo $_SESSION; ?></p>
+    <?php } 
+      elseif ($_GET["weapon"] == "rock" || "paper" || "scissors"){
+        $_SESSION = $_GET["weapon"]; ?>
+        <p><?php echo $_SESSION; ?></p>
+    <?php } ?>
+
     <header><?php echo $thisPage ?></header>
       <div id='main'>
         <nav>

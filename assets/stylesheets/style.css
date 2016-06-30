@@ -70,7 +70,7 @@ a:link {
   flex: 3 1 60%;
 }
 
-#main > article > div {
+#main > article > div { 
   border: 1px solid black;
 }
 
