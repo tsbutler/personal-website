@@ -4,6 +4,54 @@
 $weapons = array("rock" => "rock.php", "paper" => "paper.php", "scissors" => "scissors.php"); 
 $weapon = $_GET["weapon"];
 
+function outcome($weapon){
+  if ($weapon == "rockscissors"){ ?>
+    <div class="outcome">
+      <?php echo "ROCK WINS!";?>
+    </div>
+  <?php }
+  elseif ($weapon == "scissorsrock") { ?>
+    <div class="outcome">
+      <?php echo "ROCK WINS!";?>
+    </div>
+  <?php }
+  elseif ($weapon == "paperrock") { ?>
+    <div class="outcome">
+      <?php echo "PAPER WINS!";?>
+    </div>
+  <?php }
+  elseif ($weapon == "rockpaper") { ?>
+    <div class="outcome">
+      <?php echo "PAPER WINS!";?>
+    </div>
+  <?php }
+  elseif ($weapon == "scissorspaper") { ?>
+    <div class="outcome">
+      <?php echo "SCISSORS WINS!";?>
+    </div>
+  <?php }
+  elseif ($weapon == "paperscissors") { ?>
+    <div class="outcome">
+      <?php echo "SCISSORS WINS!";?>
+    </div>
+  <?php }
+  elseif ($weapon == "rockrock") { ?>
+    <div class="outcome">
+      <?php echo "DRAW!";?>
+    </div>
+  <?php }
+  elseif ($weapon == "paperpaper") { ?>
+    <div class="outcome">
+      <?php echo "DRAW!";?>
+    </div>
+  <?php }
+  elseif ($weapon == "scissorsscissors") { ?>
+    <div class="outcome">
+      <?php echo "DRAW!";?>
+    </div>
+  <?php }
+}
+
 switch ($weapon) {
     case "rock" || "paper" || "scissors":
         foreach($weapons as $key => $val) { ?>
@@ -12,31 +60,9 @@ switch ($weapon) {
               <img src="./assets/images/<?php echo $key; ?>.png" alt="<?php echo $key; ?>">
             </a>
           </div>
-          <form action="games.php?weapon=<?php echo $weapon; ?>" method="post">
-            <input type="submit" value="And the winner is...">
-          </form>
         <?php }
+        outcome($weapon);
         break;
-    case "rockpaper" || "paperrock": ?>
-        <div class="rps-victory">
-          <p>PAPER WINS!</p>
-        </div>
-        <?php break;
-    case "paperscissors" || "scissorspaper": ?>
-        <div class="rps-victory">
-          <p>SCISSORS WINS!</p>
-        </div>
-        <?php break;
-    case "rockscissors" || "scissorsrock": ?>
-        <div class="rps-victory">
-          <p>ROCK WINS!</p>
-        </div>
-        <?php break;
-    case "paperpaper" || "scissorsscissors" || "rockrock": ?>
-        <div class="rps-victory">
-          <p>DRAW!</p>
-        </div>
-        <?php break;        
     default:
         foreach($weapons as $key => $val) { ?>
           <div class="rps-link">
@@ -46,7 +72,6 @@ switch ($weapon) {
           </div>
         <?php } 
 } ?>
-
 </div>
 
 
