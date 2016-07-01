@@ -1,6 +1,6 @@
 <?php
 
-$pages = array("Home" => "index.php", "About" => "about.php", "Things" => "things.php", "Games" => "games.php?game=");
+$pages = array("Home" => "index.php", "About" => "about.php", "Things" => "things.php", "Games" => "games.php");
 $articles = array("Journal" => "journal.php");
 $profiles = array("twitter" => "https://twitter.com/ThinkingBinary", "linkedin" => "https://www.linkedin.com/in/thorinbutler", "github" => "https://github.com/tsbutler");
 ?> 

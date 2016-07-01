@@ -21,7 +21,7 @@ $thisPage="Games";
               <p>This portion of the page showcases a few simple games you can play.</p>
             <h2>Rock | Paper | Scissors</h2>
             <div>
-              <?php include 'rps.php' ?>
+              <?php include 'rps.php'; ?>
             </div>
             <h2> Tic | Tac | Toe</h2>
             <div>
