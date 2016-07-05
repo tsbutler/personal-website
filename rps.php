@@ -5,61 +5,43 @@ $weapons = array("rock" =>"asdf", "paper" => "fdsa", "scissors" => "dfsa");
 $weapon = $_GET["weapon"];
 
 function outcome($weapon){
-  if ($weapon == "asdfdfsa"){ ?>
-    <div class="outcome">
-      <?php echo "ROCK WINS!";?><br>
-        <a href="games.php">RESET</a>
-    </div>
-  <?php }
-  elseif ($weapon == "dfsaasdf") { ?>
-    <div class="outcome">
-      <?php echo "ROCK WINS!";?><br>
-        <a href="games.php">RESET</a>
-    </div>
-  <?php }
-  elseif ($weapon == "fdsaasdf") { ?>
-    <div class="outcome">
-      <?php echo "PAPER WINS!";?><br>
-        <a href="games.php">RESET</a>
-    </div>
-  <?php }
-  elseif ($weapon == "asdffdsa") { ?>
-    <div class="outcome">
-      <?php echo "PAPER WINS!";?><br>
-        <a href="games.php">RESET</a>
-    </div>
-  <?php }
-  elseif ($weapon == "dfsafdsa") { ?>
-    <div class="outcome">
-      <?php echo "SCISSORS WINS!";?><br>
-        <a href="games.php">RESET</a>
-    </div>
-  <?php }
-  elseif ($weapon == "fdsadfsa") { ?>
-    <div class="outcome">
-      <?php echo "SCISSORS WINS!";?><br>
-        <a href="games.php">RESET</a>
-    </div>
-  <?php }
-  elseif ($weapon == "asdfasdf") { ?>
-    <div class="outcome">
-      <?php echo "DRAW!";?><br>
-        <a href="games.php">RESET</a>
-    </div>
-  <?php }
-  elseif ($weapon == "fdsafdsa") { ?>
-    <div class="outcome">
-      <?php echo "DRAW!";?><br>
-        <a href="games.php">RESET</a>
-    </div>
-  <?php }
-  elseif ($weapon == "dfsadfsa") { ?>
-    <div class="outcome">
-      <?php echo "DRAW!";?><br>
-        <a href="games.php">RESET</a>
-    </div>
-  <?php }
+  if ($weapon == "asdfdfsa"){ 
+    return "ROCK WINS!";
+  }
+  elseif ($weapon == "dfsaasdf") { 
+    return "ROCK WINS!";
+  }
+  elseif ($weapon == "fdsaasdf") { 
+    return "PAPER WINS!";
+  }
+  elseif ($weapon == "asdffdsa") { 
+    return "PAPER WINS!";
+  }
+  elseif ($weapon == "dfsafdsa") {
+    return "SCISSORS WINS!";
+  }
+  elseif ($weapon == "fdsadfsa") {
+    return "SCISSORS WINS!";
+  }
+  elseif ($weapon == "asdfasdf") {
+    return "DRAW!";
+  }
+  elseif ($weapon == "fdsafdsa") {
+    return "DRAW!";
+  }
+  elseif ($weapon == "dfsadfsa") {
+    return "DRAW!";
+  }
 }
+
+function display_outcome(){
+?>
+    <div class="outcome">
+      <?php echo outcome($weapon) . " WINS!";?><br>
+        <a href="games.php">RESET</a>
+    </div>
+  <?php
+}  
 
 switch ($weapon) {
       case "asdf" || "fdsa" || "dfsa":
