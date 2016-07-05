@@ -4,6 +4,7 @@
 $weapons = array("rock" =>"asdf", "paper" => "fdsa", "scissors" => "dfsa"); 
 $weapon = $_GET["weapon"];
 
+
 function outcome($weapon){
   if ($weapon == "asdfdfsa"){ 
     return "ROCK WINS!";
@@ -34,11 +35,9 @@ function outcome($weapon){
   }
 }
 
-function display_outcome(){
-?>
+function display_outcome($weapon){ ?>
     <div class="outcome">
-      <?php echo outcome($weapon) . " WINS!";?><br>
-        <a href="games.php">RESET</a>
+      <?php echo outcome($weapon); ?><br>
     </div>
   <?php
 }  
@@ -63,7 +62,7 @@ switch ($weapon) {
           <?php } 
 }
 
-outcome($weapon);
+display_outcome($weapon);
 ?>
 </div>
 
