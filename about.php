@@ -1,18 +1,5 @@
 <?php $thisPage="About"; ?>
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
-    <title>About</title>
-  </head>
-  <body>
-    <header><?php echo $thisPage ?></header>
-      <div id='main'>
-        <nav>
-          <div class="nav-bar">
-            <?php include 'assets/phpincludes/navigation.php';?>
-          </div>
-        </nav>
+<?php include 'assets/phpincludes/top.php';?>
         <article>
           <h1>About me</h1>
             <p>I'm a relatively new web developer who is just stretching his legs.  Prior to getting involved in tech, I served for nine years in the Air Force as a linguist.</p>

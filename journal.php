@@ -1,18 +1,5 @@
 <?php $thisPage="Journal"; ?>
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
-    <title>Journal</title>
-  </head>
-  <body>
-    <header><?php echo $thisPage ?></header>
-      <div id='main'>
-        <nav>
-          <div class="nav-bar">
-            <?php include 'assets/phpincludes/navigation.php';?>
-          </div>
-        </nav>
+<?php include 'assets/phpincludes/top.php';?>
         <article>
           <h1>Journal Entries</h1>
             <h2>Tuesday June 21, 2016</h2>
