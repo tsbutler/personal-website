@@ -1,6 +1,4 @@
-<?php 
-$thisPage="Games"; 
-?>
+<?php $thisPage="Games"; ?>
 <?php include 'assets/phpincludes/top.php';?>
         <article>
           <h1></h1>
@@ -14,8 +12,4 @@ $thisPage="Games";
             <div>
             <div>
         </article>
-        <aside></aside>
-      </div>
-    <footer></footer>
-  </body>
-</html>
+<?php include 'assets/phpincludes/bottom.php';?>
