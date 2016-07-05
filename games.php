@@ -1,20 +1,7 @@
 <?php 
 $thisPage="Games"; 
 ?>
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
-    <title>Games</title>
-  </head>
-  <body>
-    <header><?php echo $thisPage ?></header>
-      <div id='main'>
-        <nav>
-          <div class="nav-bar">
-            <?php include 'assets/phpincludes/navigation.php';?>
-          </div>
-        </nav>
+<?php include 'assets/phpincludes/top.php';?>
         <article>
           <h1></h1>
             <h2>What this is...</h2>
